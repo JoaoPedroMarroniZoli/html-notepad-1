@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Materias de estudo</title>
+
+	<style>
+		body{
+			font-family: Arial, sans-serif;
+			background-image: linear-gradient(to right, #DBC751, #BEAC46);
+		}
+		h1, h2{
+			text-align: center;
+		}
+		header{
+			background-color: #5F50DB;
+			padding: 0;
+			margin: 20px;
+			border-radius: 10px;
+			box-shadow: 5px 5px 7px #333127;
+		}
+		div h2{
+			text-align: left;
+		}
+		main{
+			padding: 20px;
+			background-color: #FFFFFF;
+			margin: 20px;
+			border-radius: 10px;
+			box-shadow: 5px 5px 7px #333127;
+		}
+		pre {
+    			background-color: #f4f4f4;
+    			padding: 15px;
+    			border-radius: 10px;
+       			margin: 20px auto;
+    			box-shadow: 5px 5px 7px #333127;
+			max-width: 100%;
+			overflow-x: auto; 
+		}
+		footer {
+			background-color: #f4f4f4;
+			margin: 20px;
+			padding: 5px;
+			border-radius: 10px;
+			box-shadow: 5px 5px 7px #333127;
+			width: 300px;
+			max-width: 100%;
+			margin-left: auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+	<header>
+			<h1>Bem vindo a minha <br> página de materiais de estudo</h1>
+		</header>
+	</div>
+
+	<div id="main">
+	<main>
+		<h2>Conteúdo abordado: Condicionais em C</h2>
+		<p>Existem 4 tipos de estrutura condicional em C</p>
+		<ul>
+			<li>Simples: if;</li>
+			<li>Composta: if-else;</li>
+			<li>encadeada if-else if-else;</li>
+			<li>Multipla escolha: switch-case;</li>
+		</ul>
+		<p style="text-align: center;">Abordaremos cada uma das condicionais a seguir</p>
+		<h3>Simples: if</h3>
+		<p>A estrutura if permite executar um bloco de código somente se uma condição for verdadeira. A sintaxe é a seguinte:</p>
+		<pre><code>
+			if (condicao) {
+  				// bloco de codigo a ser executado se a condicao for verdadeira
+			}
+		</code></pre>
+		<hr>
+		<h3>Condicional composto: a estrutura if-else</h3>
+		<p>A estrutura if-else permite executar um bloco de código se uma condição for verdadeira e outro bloco de código se a condição for falsa. A sintaxe é a seguinte:</p>
+		<pre><code>
+			if (condicao) {
+  				// bloco de codigo a ser executado se a condicao for verdadeira
+			} else {
+ 				 // bloco de codigo a ser executado se a condicao for falsa
+			}
+		</code></pre>
+		<hr>
+		<h3>Condicional encadeado: a estrutura if – else if – else</h3>
+		<p>A estrutura condicional if – else if – else é uma das formas mais comuns de controlar o fluxo de um programa em C, permitindo executar diferentes blocos de código dependendo de uma ou mais condições.<br>	A estrutura do if – else if – else começa com a palavra-chave if, seguida de uma expressão entre parênteses que será avaliada como verdadeira ou falsa. Se a expressão for verdadeira, um bloco de código entre chaves {} será executado. Caso contrário, a execução passará para o próximo bloco de código else if, que seguirá o mesmo padrão.</p>
+		<pre><code>
+			if (condicao1) {
+  				// bloco de código a ser executado se a condicao1 for verdadeira
+			} else if (condicao2) {
+  				// bloco de código a ser executado se a condicao2 for verdadeira
+			} else if (condicao3) {
+  				// bloco de código a ser executado se a condicao3 for verdadeira
+			} else {
+ 				// bloco de código a ser executado caso nenhuma das condições anteriores seja verdadeira
+			}
+		</code></pre>
+		<hr>
+		<h3>Condicional múltipla escolha: Switch - case</h3>
+		<p>A estrutura condicional switch-case em linguagem C é uma forma de controlar o fluxo do programa com base em um valor específico. O switch é uma instrução que permite a comparação do valor de uma variável com várias possibilidades de valores, e cada possibilidade é associada a um bloco de código executável.<br>A estrutura do switch-case começa com a palavra-chave switch seguida por um valor ou uma expressão entre parênteses. Em seguida, é aberto um bloco de código entre chaves {}. O bloco é composto por várias instruções case, cada uma com um valor ou uma constante, seguida de dois pontos : e um bloco de código a ser executado caso o valor da expressão seja igual ao valor daquele case.<br>Cada bloco de código deve terminar com a palavra-chave break para evitar a execução dos blocos subsequentes.</p>
+		<pre><code>
+			switch (valor) {
+				case valor1:
+				  // bloco de código a ser executado quando o valor for igual a valor1
+				  break;
+				case valor2:
+				  // bloco de código a ser executado quando o valor for igual a valor2
+				  break;
+				// mais casos podem ser adicionados aqui
+				default:
+				  // bloco de código a ser executado caso nenhum dos casos anteriores seja verdadeiro
+				}
+		</code></pre>
+	</main>
+	</div>
+	<div id="footer"><footer>
+			<p>Referencia: <a href="https://www.bosontreinamentos.com.br/programacao-em-linguagem-c/estruturas-de-decisao-condicional-em-linguagem-c/" target="_blank">Bosontreinamentos</a></p>
+<p>Acesse o <a href="pag02.html" target="_self">questionário aqui</a></p>
+	</footer></div>
+</body>
+</html>

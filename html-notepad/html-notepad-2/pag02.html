@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Questionário - Condicionais em C</title>
+
+	<style>
+		body{
+			font-family: Arial, sans-serif;
+			background-image: linear-gradient(to right, #DBC751, #BEAC46);
+		}
+		h1, h2{
+			text-align: center;
+		}
+		header{
+			background-color: #5F50DB;
+			padding: 0;
+			margin: 20px;
+			border-radius: 10px;
+			box-shadow: 5px 5px 7px #333127;
+		}
+		main{
+			padding: 20px;
+			background-color: #FFFFFF;
+			margin: 20px;
+			border-radius: 10px;
+			box-shadow: 5px 5px 7px #333127;
+		}
+		.pergunta{
+			margin-bottom: 20px;
+		}
+		button{
+			padding: 10px 20px;
+			background-color: #5F50DB;
+			color: white;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		button:hover{
+			background-color: #4a3cc7;
+		}
+		footer{
+			background-color: #f4f4f4;
+			margin: 20px;
+			padding: 5px;
+			border-radius: 10px;
+			box-shadow: 5px 5px 7px #333127;
+			width: 300px;
+			max-width: 100%;
+			margin-right: auto;
+		}
+		pre {
+    			background-color: #f4f4f4;
+    			padding: 15px;
+    			border-radius: 10px;
+       			margin: 20px auto;
+    			box-shadow: 5px 5px 7px #333127;
+			max-width: 100%;
+			overflow-x: auto; 
+		}
+	</style>
+</head>
+
+<body>
+
+	<header>
+		<h1>Questionário</h1>
+		<h2>Condicionais em Linguagem C</h2>
+	</header>
+
+	<main>
+		<form>
+
+			<div class="pergunta">
+				<p><strong>1)</strong> Qual estrutura executa um bloco apenas se a condição for verdadeira?</p>
+				<label><input type="radio" name="q1"> switch</label><br>
+				<label><input type="radio" name="q1"> if</label><br>
+				<label><input type="radio" name="q1"> for</label><br>
+				<label><input type="radio" name="q1"> while</label>
+			</div>
+
+			<div class="pergunta">
+				<p><strong>2)</strong> Analise o bloco de código a seguir e marque a alternativa correta sobre a estrutura condicional a que ele se refere:</p>
+
+				<pre><code>
+				if (nota >= 7) {
+				    printf("Aprovado");
+				} else {
+				    printf("Reprovado");
+				}
+				</code></pre>
+
+				<label><input type="radio" name="q1"> Estrutura condicional simples (if)</label><br>
+				<label><input type="radio" name="q1"> Estrutura condicional composta (if-else)</label><br>
+				<label><input type="radio" name="q1"> Estrutura condicional encadeada (if-else if-else)</label><br>
+				<label><input type="radio" name="q1"> Estrutura de múltipla escolha (switch-case)</label>
+			</div>
+
+			<div class="pergunta">
+				<p><strong>3)</strong> O else é executado quando:</p>
+				<label><input type="radio" name="q3"> A condição do if é verdadeira</label><br>
+				<label><input type="radio" name="q3"> A condição do if é falsa</label><br>
+				<label><input type="radio" name="q3"> Sempre executa</label><br>
+				<label><input type="radio" name="q3"> Nunca executa</label>
+			</div>
+
+			<div class="pergunta">
+				<p><strong>4)</strong> A estrutura utilizada para múltiplas escolhas é:</p>
+				<label><input type="radio" name="q4"> if</label><br>
+				<label><input type="radio" name="q4"> else</label><br>
+				<label><input type="radio" name="q4"> switch-case</label><br>
+				<label><input type="radio" name="q4"> do-while</label>
+			</div>
+
+			<div class="pergunta">
+				<p><strong>5)</strong> Qual palavra-chave evita que os próximos casos do switch sejam executados?</p>
+				<label><input type="radio" name="q5"> stop</label><br>
+				<label><input type="radio" name="q5"> end</label><br>
+				<label><input type="radio" name="q5"> break</label><br>
+				<label><input type="radio" name="q5"> exit</label>
+			</div>
+
+			<button type="submit">Enviar Respostas</button>
+
+		</form>
+	</main>
+
+	<footer>
+		<p><a href="index.html">Voltar para página principal</a></p>
+	</footer>
+
+</body>
+</html>
